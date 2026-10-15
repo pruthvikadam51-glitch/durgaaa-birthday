@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7c9d8">
+<title>For Durgaaa ❤️🧿</title>
+<style>
+:root{--pink:#f8c9d8;--rose:#b83c63;--deep:#74243f;--cream:#fff8f8;--ink:#5d263b}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:radial-gradient(circle at top,#fff5f7 0,#fbe0e8 45%,#f4bfd0 100%);overflow-x:hidden}
+main{width:min(92%,560px);margin:0 auto;padding:28px 0 42px;position:relative;z-index:1}
+.topline{text-align:center;letter-spacing:.22em;text-transform:uppercase;font:11px Arial,sans-serif;color:#a24a69}
+.card{background:rgba(255,250,250,.88);border:1px solid rgba(184,60,99,.2);border-radius:28px;padding:clamp(22px,6vw,38px);box-shadow:0 18px 55px #9c31521a;text-align:center;margin-top:18px}
+.rose{font-size:clamp(42px,12vw,68px);line-height:1.2;filter:drop-shadow(0 6px 8px #b83c6322)}
+h1{font-size:clamp(31px,8vw,47px);line-height:1.12;margin:16px 0 12px;color:var(--deep);font-weight:normal}
+h2{font-size:clamp(25px,6vw,34px);font-weight:normal;color:var(--deep);margin:0 0 18px}
+p{font-size:17px;line-height:1.75;margin:12px 0}
+.small{font:12px Arial,sans-serif;letter-spacing:.08em;color:#a05c73}
+button{font:600 14px Arial,sans-serif;letter-spacing:.04em;color:white;background:linear-gradient(135deg,#c44770,#8d294b);border:0;border-radius:999px;padding:15px 24px;min-height:48px;margin-top:18px;box-shadow:0 8px 20px #9b2e5029;cursor:pointer}
+button:focus-visible{outline:3px solid #74243f;outline-offset:3px}
+.hidden{display:none}
+.letter{text-align:left;background:#fffafa;border-radius:18px;padding:20px;border:1px dashed #d98da6;margin-top:18px}
+.signature{text-align:right;font-style:italic;color:#a2385e;margin-top:22px}
+.footer{font:11px Arial,sans-serif;text-align:center;color:#96536c;margin-top:20px}
+.floating{position:fixed;bottom:-35px;opacity:.5;pointer-events:none;animation:float 9s linear infinite;z-index:0}
+@keyframes float{to{transform:translateY(-115vh) rotate(24deg);opacity:0}}
+.sparkle{color:#bd5377}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="floating" style="left:8%;font-size:25px;animation-delay:0s">🌸</div>
+<div class="floating" style="left:27%;font-size:18px;animation-delay:3s">♡</div>
+<div class="floating" style="left:71%;font-size:24px;animation-delay:1s">🌹</div>
+<div class="floating" style="left:89%;font-size:18px;animation-delay:5s">♡</div>
+<main>
+  <div class="topline">a little surprise, made just for you</div>
+  <section class="card" id="welcome">
+    <div class="rose">🌷💌🌹</div>
+    <p class="small">TO SOMEONE VERY SPECIAL</p>
+    <h1>For Durgaaa❤️🧿</h1>
+    <p>There’s a little something I wanted you to read today…</p>
+    <p class="small">Take a breath, tap below, and open your surprise.</p>
+    <button id="openLetter">Open your surprise 💗</button>
+  </section>
+
+  <section class="card hidden" id="letterSection">
+    <div class="rose">🌹</div>
+    <p class="small">A LITTLE LETTER FROM THE HEART</p>
+    <h2>Happy Birthday, Durgaaa! ❤️</h2>
+    <div class="letter">
+      <p>Some people come into our lives without us even realizing it, but slowly, they create a special place in our hearts… and you’re one of those people. 🫶🏻</p>
+      <p>Maybe I can’t always express my feelings in words, but honestly, it’s difficult to explain how special you are to me. I hope your smile never fades, your heart always stays happy, and every little dream you carry comes true. ✨</p>
+      <p>This gift may be small, but the feelings behind it are much bigger than words can explain. If I could give you all the happiness in the world, I truly would. Even your smallest smile has a way of bringing happiness to my heart. 🌷</p>
+      <p>No matter where life takes you, I hope you always stay happy, take care of yourself, and never lose that beautiful smile of yours. Some people become close to our hearts in ways words can never explain… and you’re one of those people to me. ❤️</p>
+      <p>May this new year of your life bring you peace, beautiful memories, kind people, and all the happiness your heart deserves. Keep shining and keep being the lovely person you are. 🧿💗</p>
+      <p class="signature">— Someone special ❤️</p>
+    </div>
+    <button id="finalReveal">One last little surprise… ✨</button>
+  </section>
+
+  <section class="card hidden" id="finalSection">
+    <div class="rose">💐💗🧿</div>
+    <p class="small">YOUR FINAL SURPRISE</p>
+    <h2>One wish, just for you</h2>
+    <p>May life give you a thousand reasons to smile, the courage to follow every dream, and people who remind you how precious you are.</p>
+    <p><strong>Never forget: you deserve the beautiful things you wish for. ❤️</strong></p>
+    <p class="sparkle">Happy Birthday, Durgaaa! 🌹✨</p>
+    <p class="small">A small page, with a whole lot of good wishes.</p>
+    <button id="replay">Read it again 💌</button>
+  </section>
+  <div class="footer">Made with warmth, roses, and heartfelt wishes ♡</div>
+</main>
+<script>
+const welcome=document.getElementById('welcome');
+const letter=document.getElementById('letterSection');
+const final=document.getElementById('finalSection');
+function show(section){[welcome,letter,final].forEach(s=>s.classList.add('hidden'));section.classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});}
+document.getElementById('openLetter').addEventListener('click',()=>show(letter));
+document.getElementById('finalReveal').addEventListener('click',()=>show(final));
+document.getElementById('replay').addEventListener('click',()=>show(welcome));
+</script>
+</body>
+</html>
